@@ -109,7 +109,7 @@ flutter run
 
 ## 📥 Download Aplikasi
 
-**Android APK**: [Download di sini](https://drive.google.com/drive/folders/1YnV6eG6pVOwzytwQf0VWzTf_gfbtT0l2?usp=sharing)
+**Android APK**: [Download di sini](https://drive.google.com/file/d/1R9b1Zb7e-OQVbAAS9vTdMR4r2Bm9_PiM/view?usp=sharing)
 
 
 ### 4. Hasil Prediksi
