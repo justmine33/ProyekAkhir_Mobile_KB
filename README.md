@@ -42,53 +42,74 @@ Model dilatih menggunakan **Palmer Penguins Dataset** dan mencapai **akurasi 98.
 ---
 
 ## Cara Menjalankan Program ⚙️
+*(Penguin App – Prediksi Spesies Penguin)*
 
-### 1. Clone & Setup
+### 1. Clone Repository
 ```bash
 git clone https://github.com/justmine33/ProyekAkhir_Mobile_KB.git
 cd ProyekAkhir_Mobile_KB
+```
 
 ### 2. Setup Backend (Django)
 ```bash
-cd api\synapse
+cd api/synapse
 python -m venv venv
-conda activate PA_Mobile
+
+# Windows
+venv\Scripts\activate
+
+# Linux/Mac
+source venv/bin/activate
+
+# Run server
 python manage.py runserver
+```
 
-### 3. Setup Frontend
+
+### 3. Setup Frontend (Flutter)
 ```bash
-cd ../mobileapp
+cd ../../mobileapp
 flutter pub get
-
-### 4. Jalankan App
-```bash
 flutter run
+```
 
+## 💻 Cara Penggunaan
 
-## Cara Menggunakan Aplikasi 🧑‍💻  
-*(Penguin AI – Prediksi Spesies Penguin)*
+### 1. Registrasi Akun
 
-1. **Registrasi Akun**  
-   Buka aplikasi → pilih **“Daftar”** → isi:  
-   - Nama  
-   - Password 
-   Tekan **Daftar** → akun langsung aktif.
+1. Buka aplikasi
+2. Pilih **"Daftar"**
+3. Isi form registrasi:
+   - Nama
+   - Email
+   - Password
+4. Klik **Daftar**
 
-2. **Login Akun**  
-   Masuk dengan email & password yang sudah didaftarkan.  
-   *Lupa password?* → Klik **“Lupa Password”** untuk reset via email.
+### 2. Login
 
-3. **Halaman Predict**  
-   Masukkan **pengukuran fisik penguin** (dalam milimeter & gram):  
-   - **Culmen Length (Panjang Paruh)** → contoh: `39.1`  
-   - **Culmen Depth (Kedalaman Paruh)** → contoh: `18.7`  
-   - **Flipper Length (Panjang Sirip)** → contoh: `181`  
-   - **Body Mass (Berat Badan)** → contoh: `3750`
-   - **Jenis Kelamin** → contoh: `Betina`  
-   Tekan **Predict** → tunggu 1–2 detik.
+1. Masukkan email & password
+2. Klik **Login**
+3. Jika lupa password → klik **"Lupa Password"**
 
-4. **Lihat Hasil Prediksi**  
-   Aplikasi menampilkan:  
-   - **Spesies Terprediksi**: `Adélie` / `Chinstrap` / `Gentoo`  
-   - **Foto Species Penguin**: `98%`  
-   - **Data Input**
+### 3. Prediksi Spesies
+
+1. Navigasi ke halaman **Predict**
+2. Masukkan data pengukuran penguin:
+
+| Parameter | Satuan | Contoh |
+|-----------|--------|--------|
+| Culmen Length | mm | 39.1 |
+| Culmen Depth | mm | 18.7 |
+| Flipper Length | mm | 181 |
+| Body Mass | gram | 3750 |
+| Jenis Kelamin | - | Betina |
+
+3. Klik **Predict**
+4. Tunggu 1-2 detik untuk hasil
+
+### 4. Hasil Prediksi
+
+Aplikasi akan menampilkan:
+- ✅ Spesies yang diprediksi
+- 📸 Foto spesies penguin
+- 📝 Ringkasan data input
