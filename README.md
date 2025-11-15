@@ -107,6 +107,11 @@ flutter run
 3. Klik **Predict**
 4. Tunggu 1-2 detik untuk hasil
 
+## 📥 Download Aplikasi
+
+**Android APK**: [Download di sini](https://drive.google.com/drive/folders/1YnV6eG6pVOwzytwQf0VWzTf_gfbtT0l2?usp=sharing)
+
+
 ### 4. Hasil Prediksi
 
 Aplikasi akan menampilkan:
